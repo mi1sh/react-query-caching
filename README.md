@@ -1,30 +1,67 @@
-# React + TypeScript + Vite
+<div align="center">
+  <h1>⚙️ React Query caching 💮</h1>
+  This is an example of how data caching can be implemented in React Query
+</div>
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 🧑‍💻 Getting Started
 
-Currently, two official plugins are available:
+### ❕ Prerequisites
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- [Node.js](https://nodejs.org/en/download/) (v12 or higher)
+- [npm](https://www.npmjs.com/get-npm) or [yarn](https://yarnpkg.com/)
 
-## Expanding the ESLint configuration
+### 💿 Installation
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+1. Clone the repository:
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json', './tsconfig.app.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+```sh
+git clone https://github.com/mi1sh/react-query-caching.git
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+2. Navigate to the project directory:
+
+```sh
+cd react-query-caching
+```
+
+3. Install dependencies:
+
+```sh
+npm install
+```
+
+or
+
+```sh
+yarn install
+```
+
+### 🏃 Running the Application
+
+To start the development server, run:
+
+```sh
+npm dev
+```
+
+or
+
+```sh
+yarn run dev
+```
+
+## 🏗️ Project Structure
+
+- `src/`
+	- `components/` - React components
+	- `pages/` - Pages for routing
+	- `types.ts` - TypeScript type definitions
+	- `App.tsx` - Main application component
+	- `main.tsx` - Entry point
+
+## 🕸️ API Endpoints
+
+- Fetch User: `GET https://jsonplaceholder.typicode.com/users`
+- Fetch Countries: `GET https://restcountries.com/v3.1`
+- Fetch Todos: `GET https://dummyjson.com/todos`
+- Fetch Posts: `GET https://dummyjson.com/posts`
