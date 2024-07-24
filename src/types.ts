@@ -17,3 +17,10 @@ export interface Posts {
 	title: string;
 	body: string;
 }
+
+export interface Country {
+	name: {
+		common: string;
+	}
+	flag: string
+}

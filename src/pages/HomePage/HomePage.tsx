@@ -1,7 +1,7 @@
 import {PageWrapper} from '../PageWrapper.styles.ts';
 import {useQuery} from 'react-query';
 import {CountryCard, CountryList} from './HomePage.styles.ts';
-import {User} from '../../types.ts';
+import {Country, User} from '../../types.ts';
 
 const fetchUser = async () => {
     const response = await fetch(`https://jsonplaceholder.typicode.com/users/1`);
@@ -50,7 +50,7 @@ export const HomePage = () => {
             <div>
                 <h2>These are the countries I visited:</h2>
                 <CountryList>
-                    {countriesData?.map(country => (
+                    {countriesData?.map((country: Country) => (
                         <CountryCard key={country.name.common}>
                             <span>{country.flag}</span>
                             <p>{country.name.common}</p>
