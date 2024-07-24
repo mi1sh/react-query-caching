@@ -1,7 +1,7 @@
 import { Route, Routes } from "react-router-dom"
-import { HomePage } from "./pages/HomePage"
-import { GalleryPage } from "./pages/GalleryPage"
-import { PostsPage } from "./pages/PostsPage"
+import { HomePage } from "./pages/HomePage/HomePage.tsx"
+import { TodosPage } from "./pages/TodosPage/TodosPage.tsx"
+import { PostsPage } from "./pages/PostsPage/PostsPage.tsx"
 import { NavBar } from "./components/NavBar/NavBar"
 
 function App() {
@@ -11,7 +11,7 @@ function App() {
       <main>
         <Routes>
           <Route index element={<HomePage />} />
-          <Route path="gallery" element={<GalleryPage />} />
+          <Route path="todos" element={<TodosPage />} />
           <Route path="posts" element={<PostsPage />} />
         </Routes>
       </main>

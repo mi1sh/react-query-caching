@@ -5,11 +5,12 @@ export interface User {
 	phone: string;
 }
 
-export interface Gallery {
+export interface Todo {
     id: number,
-    title: string,
-    url: string,
-  }
+    todo: string,
+    completed: boolean;
+	userId: number;
+}
 
 export interface Posts {
 	id: number;
